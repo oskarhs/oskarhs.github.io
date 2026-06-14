@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oskar Høgberg Simensen</title>
+  <meta name="description" content="Personal website and project portfolio of Oskar Høgberg Simensen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav__brand" href="#top">Oskar Høgberg Simensen</a>
+      <ul class="nav__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Intro -->
+    <section class="hero">
+      <h1>Oskar Høgberg Simensen</h1>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I am a statistician by training. My primary research interests lie in
+        Bayesian methods and in non- and semiparametric inference &mdash;
+        approaches that let the data speak for itself by relying on flexible
+        models rather than rigid parametric assumptions.
+      </p>
+      <p>
+        Much of my work sits at the meeting point of theory and computation: I
+        enjoy developing methods that are principled on paper and practical to
+        use, and turning them into open-source software. My Julia packages for
+        density estimation and automatic histogram construction grew directly
+        out of this interest, and I care a good deal about making statistical
+        tools fast, reliable, and easy for others to pick up.
+      </p>
+      <p>
+        Away from the keyboard, I like to stay active, whether that is training
+        calisthenics or getting out on a hike. When I am after something a
+        little more relaxing, I enjoy baking.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <h2>Software projects</h2>
+      <ul class="projects">
+        <li class="project">
+          <h3 class="project__title">
+            <a href="https://github.com/oskarhs/AutoHist.jl">AutoHist.jl</a>
+          </h3>
+          <p class="project__desc">
+            A Julia package for constructing histograms with an automatic choice of bins.
+          </p>
+          <p class="project__meta">
+            <a href="https://github.com/oskarhs/AutoHist.jl">GitHub</a> ·
+            <a href="https://oskarhs.github.io/AutoHist.jl/">Docs</a> ·
+            <a href="https://doi.org/10.21105/joss.08850">Software article</a>
+          </p>
+        </li>
+
+        <li class="project">
+          <h3 class="project__title">
+            <a href="https://github.com/oskarhs/BayesDensity.jl">BayesDensity.jl</a>
+          </h3>
+          <p class="project__desc">
+            A Julia package for univariate Bayesian nonparametric density estimation.
+          </p>
+          <p class="project__meta">
+            <a href="https://github.com/oskarhs/BayesDensity.jl">GitHub</a> ·
+            <a href="https://oskarhs.github.io/BayesDensity.jl/">Docs</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section">
+      <h2>Journal articles</h2>
+      <ol class="pubs">
+        <li class="pub">
+          Simensen, O. H., Christensen, D., &amp; Hjort, N. L. (2026).
+          Random irregular histograms,
+          <cite>Computational Statistics &amp; Data Analysis</cite>.
+          <span class="pub__links">
+            <a href="https://doi.org/10.1016/j.csda.2026.108367">[link]</a>
+            <a href="pdfs/random-irregular-histograms.pdf">[pdf]</a>
+          </span>
+        </li>
+        <li class="pub">
+          Simensen, O. H. (2025).
+          AutoHist.jl: A Julia package for fast and automatic histogram construction,
+          <cite>Journal of Open Source Software</cite>.
+          <span class="pub__links">
+            <a href="https://doi.org/10.21105/joss.08850">[link]</a>
+            <a href="pdfs/autohist.pdf">[pdf]</a>
+          </span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Contact -->
+    <section id="links" class="section">
+      <h2>Links</h2>
+      <ul class="contact">
+        <li><a href="mailto:oskarhsimensen@gmail.com">Email</a></li>
+        <li><a href="https://github.com/oskarhs">GitHub</a></li>
+        <li><a href="https://orcid.org/0009-0009-5056-7324">ORCID</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Oskar Høgberg Simensen</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
